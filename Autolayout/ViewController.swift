@@ -1,5 +1,3 @@
-
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,6 +17,7 @@ class ViewController: UIViewController {
         guard let user = userName.text, !user.isEmpty else {
             
             presentUIAlert(message: "Username cannot be empty.")
+            
             return
             
         }
@@ -29,6 +28,7 @@ class ViewController: UIViewController {
             return
         }
         
+    
     }
     
     func presentUIAlert(message :String) {
