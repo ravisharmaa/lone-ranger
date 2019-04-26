@@ -76,5 +76,36 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="136.95652173913044"/>
         </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="kQK-7a-YYQ">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="2q6-tR-rG5" customClass="DashboardViewController" customModule="Autolayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUL-TH-7ML">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-5K-OCe">
+                                <rect key="frame" x="63" y="321" width="288" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="OQ6-3d-bYz"/>
+                                    <constraint firstAttribute="width" constant="288" id="wuB-5f-M4J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JVn-5K-OCe" firstAttribute="centerX" secondItem="aWJ-5d-qaa" secondAttribute="centerX" id="5Me-bk-F51"/>
+                            <constraint firstItem="JVn-5K-OCe" firstAttribute="centerY" secondItem="aWJ-5d-qaa" secondAttribute="centerY" id="qN5-GQ-Y4a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aWJ-5d-qaa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhI-5L-AEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801.44927536231887" y="136.95652173913044"/>
+        </scene>
     </scenes>
 </document>

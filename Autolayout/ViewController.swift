@@ -28,10 +28,14 @@ class ViewController: UIViewController {
             return
         }
         
+        if !password.isEmpty {
+            
+            presentDashboardView()
+        }
     
     }
     
-    func presentUIAlert(message :String) {
+    func presentUIAlert(message :String) -> Void {
         let alert = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -39,5 +43,13 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    
+    func presentDashboardView() -> Void  {
+        
+        let dashboardView = self.storyboard!.instantiateViewController(withIdentifier:"DashboardViewController")
+        
+        self.present(dashboardView, animated: true)
+        
+    }
 }
 
