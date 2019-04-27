@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,38 +16,38 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Autolayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-dM-DvF">
-                                <rect key="frame" x="20" y="257" width="374" height="222"/>
+                                <rect key="frame" x="20" y="129" width="280" height="222"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05a-If-YJn">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z4t-8i-Ol3">
-                                        <rect key="frame" x="0.0" y="46" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="46" width="280" height="38"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt6-jM-dLj">
-                                        <rect key="frame" x="0.0" y="92" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="92" width="280" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-AS-uiN">
-                                        <rect key="frame" x="0.0" y="138" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="138" width="280" height="38"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8f-iU-jdj">
-                                        <rect key="frame" x="0.0" y="184" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="184" width="280" height="38"/>
                                         <color key="backgroundColor" red="1" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Login"/>
@@ -81,14 +81,28 @@
             <objects>
                 <viewController storyboardIdentifier="DashboardViewController" id="2q6-tR-rG5" customClass="DashboardViewController" customModule="Autolayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bUL-TH-7ML">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-5K-OCe">
-                                <rect key="frame" x="63" y="321" width="288" height="114"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13n-Rz-7JF">
+                                <rect key="frame" x="110" y="352" width="100" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="OQ6-3d-bYz"/>
-                                    <constraint firstAttribute="width" constant="288" id="wuB-5f-M4J"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="RUU-Lw-LFY"/>
+                                    <constraint firstAttribute="height" constant="45" id="lx9-sd-SP2"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissDashboard:" destination="2q6-tR-rG5" eventType="touchUpInside" id="7OE-Qs-IFJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVn-5K-OCe">
+                                <rect key="frame" x="16" y="183" width="288" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="5D1-fr-FPu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="VtM-aa-eBh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -97,8 +111,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JVn-5K-OCe" firstAttribute="centerX" secondItem="aWJ-5d-qaa" secondAttribute="centerX" id="5Me-bk-F51"/>
-                            <constraint firstItem="JVn-5K-OCe" firstAttribute="centerY" secondItem="aWJ-5d-qaa" secondAttribute="centerY" id="qN5-GQ-Y4a"/>
+                            <constraint firstItem="13n-Rz-7JF" firstAttribute="top" secondItem="JVn-5K-OCe" secondAttribute="bottom" constant="55" id="AvH-dz-Mta"/>
+                            <constraint firstItem="13n-Rz-7JF" firstAttribute="centerX" secondItem="JVn-5K-OCe" secondAttribute="centerX" id="O5N-Sd-cm7"/>
+                            <constraint firstItem="JVn-5K-OCe" firstAttribute="centerX" secondItem="bUL-TH-7ML" secondAttribute="centerX" id="WSp-by-mBn"/>
+                            <constraint firstItem="JVn-5K-OCe" firstAttribute="centerY" secondItem="bUL-TH-7ML" secondAttribute="centerY" id="kjX-fr-UXi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aWJ-5d-qaa"/>
                     </view>
