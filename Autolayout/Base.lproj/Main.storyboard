@@ -109,20 +109,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lFl-pf-6J4">
+                                <rect key="frame" x="16" y="49" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aWJ-5d-qaa" firstAttribute="trailing" secondItem="lFl-pf-6J4" secondAttribute="trailing" constant="16" id="6Xk-XA-luC"/>
                             <constraint firstItem="13n-Rz-7JF" firstAttribute="top" secondItem="JVn-5K-OCe" secondAttribute="bottom" constant="55" id="AvH-dz-Mta"/>
                             <constraint firstItem="13n-Rz-7JF" firstAttribute="centerX" secondItem="JVn-5K-OCe" secondAttribute="centerX" id="O5N-Sd-cm7"/>
+                            <constraint firstItem="lFl-pf-6J4" firstAttribute="leading" secondItem="aWJ-5d-qaa" secondAttribute="leading" constant="16" id="Vw0-w0-boJ"/>
                             <constraint firstItem="JVn-5K-OCe" firstAttribute="centerX" secondItem="bUL-TH-7ML" secondAttribute="centerX" id="WSp-by-mBn"/>
                             <constraint firstItem="JVn-5K-OCe" firstAttribute="centerY" secondItem="bUL-TH-7ML" secondAttribute="centerY" id="kjX-fr-UXi"/>
+                            <constraint firstItem="lFl-pf-6J4" firstAttribute="top" secondItem="aWJ-5d-qaa" secondAttribute="top" constant="29" id="wZf-TJ-dfD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aWJ-5d-qaa"/>
                     </view>
+                    <connections>
+                        <outlet property="dashboardTextField" destination="lFl-pf-6J4" id="vJm-VE-97N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhI-5L-AEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="801.44927536231887" y="136.95652173913044"/>
+            <point key="canvasLocation" x="800.625" y="136.25"/>
         </scene>
     </scenes>
 </document>

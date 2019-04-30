@@ -10,10 +10,17 @@ import UIKit
 
 class DashboardViewController: UIViewController {
 
+     var username :String?
+    
+     var password :String?
+    
+    @IBOutlet weak var dashboardTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        dashboardTextField.text = "Hi, " + username!
     }
 
     @IBAction func dismissDashboard(_ sender: Any) {
