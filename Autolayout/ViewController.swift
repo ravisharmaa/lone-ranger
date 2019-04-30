@@ -46,9 +46,9 @@ class ViewController: UIViewController {
     
     func presentDashboardView() -> Void  {
         
-        let dashboardView = self.storyboard!.instantiateViewController(withIdentifier:"DashboardViewController")
+        let dashboardViewController = self.storyboard!.instantiateViewController(withIdentifier:"DashboardViewController")
         
-        self.present(dashboardView, animated: true)
+        self.present(dashboardViewController, animated: true)
         
     }
 }
