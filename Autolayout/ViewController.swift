@@ -25,21 +25,14 @@ class ViewController: UIViewController {
         guard let password = password.text, !password.isEmpty else {
             
             presentUIAlert(message: "Password cannot be empty.")
+            
             return
         }
         
-        if !password.isEmpty {
-            
-            presentDashboardView()
-        }
+        performSegue(withIdentifier: "segueForDashboard", sender: nil)
     
     }
-    
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        <#code#>
-    }
-    
-    
+
     func presentUIAlert(message :String) -> Void {
         let alert = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
         
@@ -47,14 +40,6 @@ class ViewController: UIViewController {
         
         self.present(alert, animated: true)
     }
-    
-    
-    func presentDashboardView() -> Void  {
-        
-        let dashboardViewController = self.storyboard!.instantiateViewController(withIdentifier:"DashboardViewController")
-        
-        self.present(dashboardViewController, animated: true)
-        
-    }
+
 }
 

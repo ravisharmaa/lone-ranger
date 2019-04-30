@@ -53,7 +53,6 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="tappedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KL5-ie-ZsD"/>
-                                            <segue destination="2q6-tR-rG5" kind="show" id="TdI-sc-mJe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -71,6 +70,7 @@
                     <connections>
                         <outlet property="password" destination="tu8-AS-uiN" id="qTn-FM-6Rn"/>
                         <outlet property="userName" destination="z4t-8i-Ol3" id="1md-IB-oec"/>
+                        <segue destination="2q6-tR-rG5" kind="show" identifier="segueForDashboard" id="Fcg-SY-Url"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
