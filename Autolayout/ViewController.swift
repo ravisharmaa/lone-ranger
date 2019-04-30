@@ -35,6 +35,11 @@ class ViewController: UIViewController {
     
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        <#code#>
+    }
+    
+    
     func presentUIAlert(message :String) -> Void {
         let alert = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
         
